@@ -1,30 +1,29 @@
 body {
 	background-color: black;
 	color: white;
-	font-family: "Courier", sans-serif;
+	font-family: "Century Gothic", sans-serif;
+	text-align: center;
 	-webkit-user-select: none;
 	-moz-user-select: -moz-none;
 	user-select: none;
 }
 
-.title {
+h1 {
 	top: 0px;
-	position: absolute;
-	left: 165px;
-	width: 345px;
-	text-align: center;
+	font-weight: normal;
 }
 
-.buttonBar {
+.center {
 	position: absolute;
-	top: 575px;
-	left: 185px;
+	left: 65px;
+	width: 545px;
 }
 
 #octaveBar {
 	position: absolute;
-	top: 82px;
+	top: 70px;
 	left: 625px;
+	height: 545px;
 }
 
 .octave {
@@ -53,10 +52,8 @@ body {
 	background-color: #DEFFF8;
 }
 
-.canvas {
-	position: absolute;
+canvas {
 	top: 40px;
-	left: 65px;
 }
 
 #whiteCanvas {
@@ -65,6 +62,22 @@ body {
 
 #rippleCanvas {
 	z-index: 2;
+}
+
+#signature {
+	position: absolute;
+	top: 150px;
+	left: 5px;
+	color: #00FFC8;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 14px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(90deg);
+}
+
+.buttonBar {
+	top: 580px;
 }
 
 button {
