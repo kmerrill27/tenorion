@@ -1,0 +1,87 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: "Courier", sans-serif;
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	user-select: none;
+}
+
+.title {
+	top: 0px;
+	position: absolute;
+	left: 165px;
+	width: 345px;
+	text-align: center;
+}
+
+.buttonBar {
+	position: absolute;
+	top: 575px;
+	left: 185px;
+}
+
+#octaveBar {
+	position: absolute;
+	top: 82px;
+	left: 625px;
+}
+
+.octave {
+	width: 40px;
+	height: 120px;
+}
+
+.arrow {
+	margin: 15px 3px 10px 3px;
+}
+
+#treble {
+	margin: 28px 7px;
+	cursor: pointer;
+}
+
+#lowOct {
+	background-color: #00FFC8;
+}
+
+#midOct {
+	background-color: #99FFE9;
+}
+
+#highOct {
+	background-color: #DEFFF8;
+}
+
+.canvas {
+	position: absolute;
+	top: 40px;
+	left: 65px;
+}
+
+#whiteCanvas {
+	z-index: 1;
+}
+
+#rippleCanvas {
+	z-index: 2;
+}
+
+button {
+  background-color: #99FFE9;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 305px;
+  height: 27px;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px black, 0px 5px 0px 0px #02F0BD, 0px 10px 5px #00FFC8;
+}
+
+button:active {
+  top: 3px;
+  box-shadow: inset 0px 1px 0px black, 0px 2px 0px 0px #02F0BD, 0px 5px 3px #00FFC8;
+}

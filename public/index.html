@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Tenori-on</title>
+<link rel="stylesheet" href="css/tenorion.css" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/tenorion.js"></script>
+</head>
+<body>
+	<h1 class="title">Play me</h1>
+	<div id="octaveBar">
+		<img class="arrow" src="images/upArrow.png">
+		<div id="highOct" class="octave" ondrop="drop(event)"
+			ondragover="allowDrop(event)"></div>
+		<div id="midOct" class="octave" ondrop="drop(event)"
+			ondragover="allowDrop(event)">
+			<img id="treble" src="images/treble.gif" draggable="true"
+				ondragstart="drag(event)">
+		</div>
+		<div id="lowOct" class="octave" ondrop="drop(event)"
+			ondragover="allowDrop(event)"></div>
+		<img class="arrow" src="images/downArrow.png">
+	</div>
+	<div>
+		<canvas id="rippleCanvas" width="545" height="545" class="canvas"></canvas>
+		<canvas id="whiteCanvas" width="545" height="545" class="canvas"></canvas>
+	</div>
+	<div class="buttonBar">
+		<button id="clearButton" type="button">Clear song</button>
+	</div>
+</body>
+</html>
