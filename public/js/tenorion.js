@@ -220,7 +220,7 @@ function ripple(xCoord, yCoord, size) {
  		setTimeout(function(){ripple(xCoord, yCoord, size + rippleOffset)}, ripplePause);
  	} else {
  		// Erase all remaining ripples from canvas
- 		rippleCtx.clearRect(1, 1, canvasSize, canvasSize);
+ 		rippleCtx.clearRect(0, 0, canvasSize, canvasSize);
  	}
  };
 
